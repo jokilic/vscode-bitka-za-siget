@@ -14,6 +14,7 @@ import { Totoro } from './pets/totoro';
 import { Zappy } from './pets/zappy';
 import { Rat } from './pets/rat';
 import { Turtle } from './pets/turtle';
+import { Nikola } from './pets/nikola';
 import { IPetType } from './states';
 
 export class PetElement {
@@ -115,7 +116,7 @@ export class PetCollection implements IPetCollection {
                 if (
                     potentialFriend.pet.left > petInCollection.pet.left &&
                     potentialFriend.pet.left <
-                        petInCollection.pet.left + petInCollection.pet.width
+                    petInCollection.pet.left + petInCollection.pet.width
                 ) {
                     // We found a possible new friend..
                     console.log(
@@ -204,6 +205,8 @@ export function createPet(
             return new Rat(...standardPetArguments, PetSpeed.normal);
         case PetType.turtle:
             return new Turtle(...standardPetArguments, PetSpeed.verySlow);
+        case PetType.nikola:
+            return new Nikola(...standardPetArguments, PetSpeed.normal);
         default:
             throw new InvalidPetException("Pet type doesn't exist");
     }
@@ -241,6 +244,8 @@ export function availableColors(petType: PetType): PetColor[] {
             return Rat.possibleColors;
         case PetType.turtle:
             return Turtle.possibleColors;
+        case PetType.nikola:
+            return Nikola.possibleColors;
         default:
             throw new InvalidPetException("Pet type doesn't exist");
     }
