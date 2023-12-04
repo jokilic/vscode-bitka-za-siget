@@ -2,10 +2,10 @@ import { PetColor } from '../../common/types';
 import { BasePetType } from '../basepettype';
 import { States } from '../states';
 
-export class Nikola extends BasePetType {
-    label = 'nikola';
+export class Sulejman extends BasePetType {
+    label = 'sulejman';
     static possibleColors = [
-        PetColor.red,
+        PetColor.brown,
     ];
     sequence = {
         startingState: States.sitIdle,
@@ -46,15 +46,15 @@ export class Nikola extends BasePetType {
         ],
     };
     get emoji(): string {
-        return '🏇🏼🇭🇷';
+        return '🏇🏼🇹🇷';
     }
     get hello(): string {
-        return ` Tako meni Boga velikoga, braniti ću Siget svojom krvlju! 🏇🏼🇭🇷`;
+        return ` Siget ću strti! 🏇🏼🇹🇷`;
     }
 }
 
-export const NIKOLA_NAMES: ReadonlyArray<string> = [
-    'Nikola Šubić Zrinjski',
-    'Nikola',
-    'Zrinjski',
+export const SULEJMAN_NAMES: ReadonlyArray<string> = [
+    'Sulejman',
+    'Možni car',
+    'Preuzvišeni car',
 ];

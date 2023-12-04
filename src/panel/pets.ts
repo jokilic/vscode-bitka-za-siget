@@ -15,6 +15,7 @@ import { Zappy } from './pets/zappy';
 import { Rat } from './pets/rat';
 import { Turtle } from './pets/turtle';
 import { Nikola } from './pets/nikola';
+import { Sulejman } from './pets/sulejman';
 import { IPetType } from './states';
 
 export class PetElement {
@@ -206,7 +207,9 @@ export function createPet(
         case PetType.turtle:
             return new Turtle(...standardPetArguments, PetSpeed.verySlow);
         case PetType.nikola:
-            return new Nikola(...standardPetArguments, PetSpeed.normal);
+            return new Nikola(...standardPetArguments, PetSpeed.slow);
+        case PetType.sulejman:
+            return new Sulejman(...standardPetArguments, PetSpeed.verySlow);
         default:
             throw new InvalidPetException("Pet type doesn't exist");
     }
@@ -246,6 +249,8 @@ export function availableColors(petType: PetType): PetColor[] {
             return Turtle.possibleColors;
         case PetType.nikola:
             return Nikola.possibleColors;
+        case PetType.sulejman:
+            return Sulejman.possibleColors;
         default:
             throw new InvalidPetException("Pet type doesn't exist");
     }

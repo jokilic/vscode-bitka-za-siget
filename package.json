@@ -1,7 +1,7 @@
 {
-    "name": "vscode-pets-nikola",
-    "displayName": "vscode-pets-nikola",
-    "description": "Pets and Nikola for your VS Code",
+    "name": "vscode-bitka-za-siget",
+    "displayName": "vscode-bitka-za-siget",
+    "description": "Bitka za Siget u vašem VSCode prozoru",
     "version": "2.0.0",
     "engines": {
         "vscode": "^1.73.0"
@@ -52,7 +52,7 @@
                 {
                     "type": "webview",
                     "id": "petsView",
-                    "name": "Pets & Nikola",
+                    "name": "Bitka za Siget",
                     "when": "vscode-pets.position == 'explorer'",
                     "icon": "media/dog.svg"
                 }
@@ -81,13 +81,13 @@
             {
                 "command": "vscode-pets.start",
                 "title": "Start pet coding session",
-                "category": "Pets & Nikola",
+                "category": "Bitka za Siget",
                 "icon": "media/dog.svg"
             },
             {
                 "command": "vscode-pets.throw-with-mouse",
                 "title": "Throw ball with mouse",
-                "category": "Pets & Nikola",
+                "category": "Bitka za Siget",
                 "icon": {
                     "dark": "media/icon/dark-throw-outline.svg",
                     "light": "media/icon/light-throw-outline.svg"
@@ -96,7 +96,7 @@
             {
                 "command": "vscode-pets.throw-ball",
                 "title": "Throw ball",
-                "category": "Pets & Nikola",
+                "category": "Bitka za Siget",
                 "icon": {
                     "dark": "media/icon/dark-circle-outline.svg",
                     "light": "media/icon/light-circle-outline.svg"
@@ -105,17 +105,17 @@
             {
                 "command": "vscode-pets.export-pet-list",
                 "title": "Export pet list",
-                "category": "Pets & Nikola"
+                "category": "Bitka za Siget"
             },
             {
                 "command": "vscode-pets.import-pet-list",
                 "title": "Import pet list",
-                "category": "Pets & Nikola"
+                "category": "Bitka za Siget"
             },
             {
                 "command": "vscode-pets.spawn-pet",
                 "title": "Spawn additional pet",
-                "category": "Pets & Nikola",
+                "category": "Bitka za Siget",
                 "icon": {
                     "dark": "media/icon/dark-add.svg",
                     "light": "media/icon/light-add.svg"
@@ -124,7 +124,7 @@
             {
                 "command": "vscode-pets.delete-pet",
                 "title": "Remove pet",
-                "category": "Pets & Nikola",
+                "category": "Bitka za Siget",
                 "icon": {
                     "dark": "media/icon/dark-trash.svg",
                     "light": "media/icon/light-trash.svg"
@@ -133,7 +133,7 @@
             {
                 "command": "vscode-pets.remove-all-pets",
                 "title": "Remove all pets",
-                "category": "Pets & Nikola",
+                "category": "Bitka za Siget",
                 "icon": {
                     "dark": "media/icon/dark-trash.svg",
                     "light": "media/icon/light-trash.svg"
@@ -142,7 +142,7 @@
             {
                 "command": "vscode-pets.roll-call",
                 "title": "Roll-call",
-                "category": "Pets & Nikola"
+                "category": "Bitka za Siget"
             }
         ],
         "configuration": [
