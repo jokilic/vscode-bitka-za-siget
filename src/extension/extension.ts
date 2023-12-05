@@ -232,7 +232,7 @@ async function handleRemovePetMessage(
                 return new PetQuickPickItem(val.name, val.type, val.color);
             }),
             {
-                placeHolder: vscode.l10n.t('Select the pet to remove.'),
+                placeHolder: vscode.l10n.t('Select a hero to remove.'),
             },
         )
         .then(async (pet: PetQuickPickItem | undefined) => {
@@ -510,7 +510,7 @@ export function activate(context: vscode.ExtensionContext) {
                 const selectedPetType = await vscode.window.showQuickPick(
                     localize.stringListAsQuickPickItemList<PetType>(ALL_PETS),
                     {
-                        placeHolder: vscode.l10n.t('Select a pet'),
+                        placeHolder: vscode.l10n.t('Select a hero'),
                     },
                 );
                 if (selectedPetType === undefined) {
@@ -545,7 +545,7 @@ export function activate(context: vscode.ExtensionContext) {
 
                 const name = await vscode.window.showInputBox({
                     placeHolder: vscode.l10n.t('Leave blank for a random name'),
-                    prompt: vscode.l10n.t('Name your pet'),
+                    prompt: vscode.l10n.t('Name your hero'),
                     value: randomName(selectedPetType.value),
                 });
                 const spec = new PetSpecification(
@@ -556,7 +556,7 @@ export function activate(context: vscode.ExtensionContext) {
                 );
                 if (!spec.type || !spec.color || !spec.size) {
                     return vscode.window.showWarningMessage(
-                        vscode.l10n.t('Cancelled Spawning Pet'),
+                        vscode.l10n.t('Cancelled creating hero'),
                     );
                 } else if (spec) {
                     panel.spawnPet(spec);
@@ -571,7 +571,7 @@ export function activate(context: vscode.ExtensionContext) {
                 await createPetPlayground(context);
                 await vscode.window.showInformationMessage(
                     vscode.l10n.t(
-                        "A Pet Playground has been created. You can now use the 'Spawn Additional Pet' Command to add more pets.",
+                        "A battle for Siget has been created. You can now use the 'Create a hero' Command to add more heroes.",
                     ),
                 );
             }
@@ -590,7 +590,7 @@ export function activate(context: vscode.ExtensionContext) {
                     await createPetPlayground(context);
                     await vscode.window.showInformationMessage(
                         vscode.l10n.t(
-                            "A Pet Playground has been created. You can now use the 'Remove All Pets' Command to remove all pets.",
+                            "A battle for Siget has been created. You can now use the 'Remove all heroes' Command to remove all heroes.",
                         ),
                     );
                 }
@@ -660,7 +660,7 @@ export function activate(context: vscode.ExtensionContext) {
 
 function updateStatusBar(): void {
     spawnPetStatusBar.text = `$(squirrel)`;
-    spawnPetStatusBar.tooltip = vscode.l10n.t('Spawn Pet');
+    spawnPetStatusBar.tooltip = vscode.l10n.t('Create a hero');
     spawnPetStatusBar.show();
 }
 
@@ -956,7 +956,7 @@ class PetPanel extends PetWebviewContainer implements IPetPanel {
         // Otherwise, create a new panel.
         const panel = vscode.window.createWebviewPanel(
             PetPanel.viewType,
-            vscode.l10n.t('Pet Panel'),
+            vscode.l10n.t('Hero panel'),
             vscode.ViewColumn.Two,
             getWebviewOptions(extensionUri),
         );

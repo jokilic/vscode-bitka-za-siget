@@ -6,8 +6,8 @@ export const enum PetColor {
 }
 
 export const enum PetType {
-    nikola = 'nikola',
-    sulejman = 'sulejman',
+    nikola = 'Nikola',
+    sulejman = 'Sulejman',
     null = 'null',
 }
 

@@ -1,0 +1,17 @@
+{
+	"Create a hero": "Stvori heroja",
+	"Hero panel": "Panel heroja",
+	"Select a hero": "Odaberi heroja",
+	"Select a color": "Odaberi boju",
+	"Select a hero to remove.": "Odaberi heroja kojega ćeš ukloniti.",
+	"Leave blank for a random name": "Ostavi prazno za random ime",
+	"Name your hero": "Ime tvog heroja",
+	"Cancelled creating hero": "Odustani u stvaranju heroja",
+	"A battle for Siget has been created. You can now use the \"Create a hero\" Command to add more heroes.": "Bitka za Siget je počela. Možeš koristiti \"Stvori heroja\" da dodaš još heroja.",
+	"A battle for Siget has been created. You can now use the \"Remove all heroes\" Command to remove all heroes.": "Bitka za Siget je počela. Možeš koristiti \"Ukloni sve heroje\" da ukloniš sve heroje.",
+	"brown": "Smeđa",
+	"red": "Crvena",
+	"white": "Bijela",
+	"nikola": "Nikola",
+	"sulejman": "Sulejman"
+}

@@ -3,7 +3,7 @@ import { BasePetType } from '../basepettype';
 import { States } from '../states';
 
 export class Sulejman extends BasePetType {
-    label = 'sulejman';
+    label = 'Sulejman';
     static possibleColors = [
         PetColor.brown,
     ];
