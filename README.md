@@ -1,16 +1,13 @@
-<div align='center'>
-
 # Bitka za Siget
 
 ![icon](https://github.com/jokilic/vscode-bitka-za-siget/raw/master/icon.png)
-</div>    
 
 Always wanted to have a battle for Siget in your VSCode window?
 Now you can have one with a simple extension.
 
 ## Thanks
 
-This extension was forked from the original work by [tonybaloney] (https://github.com/tonybaloney).
+This extension was forked from the original work by [tonybaloney](https://github.com/tonybaloney).
 
 Without his project, my inspiration and this extension would never happen.
 
