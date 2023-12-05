@@ -109,7 +109,7 @@ export abstract class BasePetType implements IPetType {
         } else if (size === PetSize.small) {
             return 40;
         } else if (size === PetSize.medium) {
-            return 72;
+            return 68;
         } else if (size === PetSize.large) {
             return 110;
         } else {

@@ -1,19 +1,4 @@
 import { PetColor, PetSize, PetSpeed, PetType } from '../common/types';
-import { Cat } from './pets/cat';
-import { Chicken } from './pets/chicken';
-import { Clippy } from './pets/clippy';
-import { Cockatiel } from './pets/cockatiel';
-import { Crab } from './pets/crab';
-import { Dog } from './pets/dog';
-import { Fox } from './pets/fox';
-import { Mod } from './pets/mod';
-import { Rocky } from './pets/rocky';
-import { RubberDuck } from './pets/rubberduck';
-import { Snake } from './pets/snake';
-import { Totoro } from './pets/totoro';
-import { Zappy } from './pets/zappy';
-import { Rat } from './pets/rat';
-import { Turtle } from './pets/turtle';
 import { Nikola } from './pets/nikola';
 import { Sulejman } from './pets/sulejman';
 import { IPetType } from './states';
@@ -176,36 +161,6 @@ export function createPet(
     ] = [el, collision, speech, size, left, bottom, petRoot, floor, name];
 
     switch (petType) {
-        case PetType.cat:
-            return new Cat(...standardPetArguments, PetSpeed.normal);
-        case PetType.chicken:
-            return new Chicken(...standardPetArguments, PetSpeed.normal);
-        case PetType.dog:
-            return new Dog(...standardPetArguments, PetSpeed.normal);
-        case PetType.fox:
-            return new Fox(...standardPetArguments, PetSpeed.fast);
-        case PetType.crab:
-            return new Crab(...standardPetArguments, PetSpeed.slow);
-        case PetType.clippy:
-            return new Clippy(...standardPetArguments, PetSpeed.slow);
-        case PetType.mod:
-            return new Mod(...standardPetArguments, PetSpeed.normal);
-        case PetType.totoro:
-            return new Totoro(...standardPetArguments, PetSpeed.normal);
-        case PetType.snake:
-            return new Snake(...standardPetArguments, PetSpeed.verySlow);
-        case PetType.rubberduck:
-            return new RubberDuck(...standardPetArguments, PetSpeed.fast);
-        case PetType.zappy:
-            return new Zappy(...standardPetArguments, PetSpeed.veryFast);
-        case PetType.rocky:
-            return new Rocky(...standardPetArguments, PetSpeed.still);
-        case PetType.cockatiel:
-            return new Cockatiel(...standardPetArguments, PetSpeed.normal);
-        case PetType.rat:
-            return new Rat(...standardPetArguments, PetSpeed.normal);
-        case PetType.turtle:
-            return new Turtle(...standardPetArguments, PetSpeed.verySlow);
         case PetType.nikola:
             return new Nikola(...standardPetArguments, PetSpeed.slow);
         case PetType.sulejman:
@@ -217,36 +172,6 @@ export function createPet(
 
 export function availableColors(petType: PetType): PetColor[] {
     switch (petType) {
-        case PetType.cat:
-            return Cat.possibleColors;
-        case PetType.chicken:
-            return Chicken.possibleColors;
-        case PetType.dog:
-            return Dog.possibleColors;
-        case PetType.fox:
-            return Fox.possibleColors;
-        case PetType.crab:
-            return Crab.possibleColors;
-        case PetType.clippy:
-            return Clippy.possibleColors;
-        case PetType.mod:
-            return Mod.possibleColors;
-        case PetType.totoro:
-            return Totoro.possibleColors;
-        case PetType.snake:
-            return Snake.possibleColors;
-        case PetType.rubberduck:
-            return RubberDuck.possibleColors;
-        case PetType.zappy:
-            return Zappy.possibleColors;
-        case PetType.rocky:
-            return Rocky.possibleColors;
-        case PetType.cockatiel:
-            return Cockatiel.possibleColors;
-        case PetType.rat:
-            return Rat.possibleColors;
-        case PetType.turtle:
-            return Turtle.possibleColors;
         case PetType.nikola:
             return Nikola.possibleColors;
         case PetType.sulejman:
