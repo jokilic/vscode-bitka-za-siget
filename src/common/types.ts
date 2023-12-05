@@ -1,15 +1,7 @@
 export const enum PetColor {
     brown = 'brown',
-    lightbrown = 'lightbrown',
-    black = 'black',
-    green = 'green',
-    yellow = 'yellow',
-    gray = 'gray',
-    purple = 'purple',
     red = 'red',
     white = 'white',
-    orange = 'orange',
-    akita = 'akita',
     null = 'null',
 }
 
@@ -68,17 +60,9 @@ export const ALL_PETS = [
     PetType.sulejman,
 ];
 export const ALL_COLORS = [
-    PetColor.black,
     PetColor.brown,
-    PetColor.lightbrown,
-    PetColor.green,
-    PetColor.yellow,
-    PetColor.gray,
-    PetColor.purple,
     PetColor.red,
     PetColor.white,
-    PetColor.orange,
-    PetColor.akita,
     PetColor.null,
 ];
 export const ALL_SCALES = [

@@ -114,8 +114,8 @@ export class PetCollection implements IPetCollection {
                     if (
                         petInCollection.pet.makeFriendsWith(potentialFriend.pet)
                     ) {
-                        potentialFriend.pet.showSpeechBubble('❤️', 2000);
-                        petInCollection.pet.showSpeechBubble('❤️', 2000);
+                        potentialFriend.pet.showSpeechBubble('🏇🏼', 2000);
+                        petInCollection.pet.showSpeechBubble('🏇🏼', 2000);
                     }
                 }
             });

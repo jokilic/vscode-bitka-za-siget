@@ -9,39 +9,35 @@
     "l10n": "./l10n",
     "repository": {
         "type": "github",
-        "url": "https://github.com/jokilic/vscode-pets"
+        "url": "https://github.com/jokilic/vscode-bitka-za-siget"
     },
     "homepage": "https://www.josipkilic.com",
-    "bugs": "https://github.com/jokilic/vscode-pets/issues",
+    "bugs": "https://github.com/jokilic/vscode-bitka-za-siget/issues",
     "publisher": "jokilic",
     "categories": [
         "Other"
     ],
     "keywords": [
-        "pet",
-        "cat",
-        "chicken",
-        "dog",
-        "pets",
-        "clippy",
-        "rubber duck",
-        "nikola"
+        "bitka",
+        "siget",
+        "nikola",
+        "sulejman"
     ],
     "license": "MIT",
     "icon": "icon.png",
     "activationEvents": [
-        "onCommand:vscode-pets.start",
-        "onCommand:vscode-pets.throw-with-mouse",
-        "onCommand:vscode-pets.throw-ball",
-        "onCommand:vscode-pets.spawn-pet",
-        "onCommand:vscode-pets.delete-pet",
-        "onCommand:vscode-pets.remove-all-pets",
-        "onCommand:vscode-pets.roll-call",
-        "onCommand:vscode-pets.export-pet-list",
-        "onCommand:vscode-pets.import-pet-list",
-        "onWebviewPanel:petCoding",
+        "onCommand:vscode-bitka-za-siget.start",
+        "onCommand:vscode-bitka-za-siget.throw-with-mouse",
+        "onCommand:vscode-bitka-za-siget.throw-ball",
+        "onCommand:vscode-bitka-za-siget.spawn-pet",
+        "onCommand:vscode-bitka-za-siget.delete-pet",
+        "onCommand:vscode-bitka-za-siget.remove-all-pets",
+        "onCommand:vscode-bitka-za-siget.roll-call",
+        "onCommand:vscode-bitka-za-siget.export-pet-list",
+        "onCommand:vscode-bitka-za-siget.import-pet-list",
+        "onWebviewPanel:bitkaCoding",
         "onView:explorer",
-        "onView:petsView",
+        "onView:bitkaView",
         "onStartupFinished"
     ],
     "main": "./out/extension/extension.js",
@@ -51,9 +47,9 @@
             "explorer": [
                 {
                     "type": "webview",
-                    "id": "petsView",
+                    "id": "bitkaView",
                     "name": "Bitka za Siget",
-                    "when": "vscode-pets.position == 'explorer'",
+                    "when": "vscode-bitka-za-siget.position == 'explorer'",
                     "icon": "media/dog.svg"
                 }
             ]
@@ -61,31 +57,31 @@
         "menus": {
             "view/title": [
                 {
-                    "command": "vscode-pets.spawn-pet",
-                    "when": "view == petsView",
+                    "command": "vscode-bitka-za-siget.spawn-pet",
+                    "when": "view == bitkaView",
                     "group": "navigation@1"
                 },
                 {
-                    "command": "vscode-pets.throw-ball",
-                    "when": "view == petsView",
+                    "command": "vscode-bitka-za-siget.throw-ball",
+                    "when": "view == bitkaView",
                     "group": "navigation@2"
                 },
                 {
-                    "command": "vscode-pets.delete-pet",
-                    "when": "view == petsView",
+                    "command": "vscode-bitka-za-siget.delete-pet",
+                    "when": "view == bitkaView",
                     "group": "navigation@3"
                 }
             ]
         },
         "commands": [
             {
-                "command": "vscode-pets.start",
-                "title": "Start pet coding session",
+                "command": "vscode-bitka-za-siget.start",
+                "title": "Start battle for Siget",
                 "category": "Bitka za Siget",
                 "icon": "media/dog.svg"
             },
             {
-                "command": "vscode-pets.throw-with-mouse",
+                "command": "vscode-bitka-za-siget.throw-with-mouse",
                 "title": "Throw ball with mouse",
                 "category": "Bitka za Siget",
                 "icon": {
@@ -94,7 +90,7 @@
                 }
             },
             {
-                "command": "vscode-pets.throw-ball",
+                "command": "vscode-bitka-za-siget.throw-ball",
                 "title": "Throw ball",
                 "category": "Bitka za Siget",
                 "icon": {
@@ -103,18 +99,18 @@
                 }
             },
             {
-                "command": "vscode-pets.export-pet-list",
-                "title": "Export pet list",
+                "command": "vscode-bitka-za-siget.export-pet-list",
+                "title": "Export heroes",
                 "category": "Bitka za Siget"
             },
             {
-                "command": "vscode-pets.import-pet-list",
-                "title": "Import pet list",
+                "command": "vscode-bitka-za-siget.import-pet-list",
+                "title": "Import heroes",
                 "category": "Bitka za Siget"
             },
             {
-                "command": "vscode-pets.spawn-pet",
-                "title": "Spawn additional pet",
+                "command": "vscode-bitka-za-siget.spawn-pet",
+                "title": "Create a hero",
                 "category": "Bitka za Siget",
                 "icon": {
                     "dark": "media/icon/dark-add.svg",
@@ -122,8 +118,8 @@
                 }
             },
             {
-                "command": "vscode-pets.delete-pet",
-                "title": "Remove pet",
+                "command": "vscode-bitka-za-siget.delete-pet",
+                "title": "Remove hero",
                 "category": "Bitka za Siget",
                 "icon": {
                     "dark": "media/icon/dark-trash.svg",
@@ -131,8 +127,8 @@
                 }
             },
             {
-                "command": "vscode-pets.remove-all-pets",
-                "title": "Remove all pets",
+                "command": "vscode-bitka-za-siget.remove-all-pets",
+                "title": "Remove all heroes",
                 "category": "Bitka za Siget",
                 "icon": {
                     "dark": "media/icon/dark-trash.svg",
@@ -140,58 +136,36 @@
                 }
             },
             {
-                "command": "vscode-pets.roll-call",
-                "title": "Roll-call",
+                "command": "vscode-bitka-za-siget.roll-call",
+                "title": "Call heroes",
                 "category": "Bitka za Siget"
             }
         ],
         "configuration": [
             {
                 "properties": {
-                    "vscode-pets.petColor": {
+                    "vscode-bitka-za-siget.petColor": {
                         "type": "string",
                         "enum": [
-                            "black",
-                            "lightbrown",
                             "brown",
-                            "green",
-                            "yellow",
-                            "gray",
-                            "purple",
                             "red",
-                            "white",
-                            "orange",
-                            "akita"
+                            "white"
                         ],
-                        "default": "brown",
-                        "description": "Pet color",
+                        "default": "red",
+                        "description": "Hero color",
                         "scope": "window"
                     },
-                    "vscode-pets.petType": {
+                    "vscode-bitka-za-siget.petType": {
                         "type": "string",
                         "enum": [
-                            "cat",
-                            "chicken",
-                            "crab",
-                            "clippy",
-                            "cockatiel",
-                            "dog",
-                            "fox",
-                            "mod",
-                            "rat",
-                            "rocky",
-                            "rubber-duck",
-                            "snake",
-                            "totoro",
-                            "turtle",
-                            "zappy",
-                            "nikola"
+                            "nikola",
+                            "sulejman"
                         ],
-                        "default": "cat",
+                        "default": "nikola",
                         "description": "Pet type",
                         "scope": "window"
                     },
-                    "vscode-pets.petSize": {
+                    "vscode-bitka-za-siget.petSize": {
                         "type": "string",
                         "enum": [
                             "nano",
@@ -200,18 +174,18 @@
                             "large"
                         ],
                         "default": "medium",
-                        "description": "Pet size"
+                        "description": "Hero size"
                     },
-                    "vscode-pets.position": {
+                    "vscode-bitka-za-siget.position": {
                         "type": "string",
                         "enum": [
                             "panel",
                             "explorer"
                         ],
                         "default": "explorer",
-                        "description": "VSCode pets webview position"
+                        "description": "Bitka za Siget webview position"
                     },
-                    "vscode-pets.theme": {
+                    "vscode-bitka-za-siget.theme": {
                         "type": "string",
                         "enum": [
                             "none",
@@ -220,9 +194,9 @@
                             "beach"
                         ],
                         "default": "none",
-                        "description": "Background theme assets for your pets"
+                        "description": "Background theme assets for the battle"
                     },
-                    "vscode-pets.throwBallWithMouse": {
+                    "vscode-bitka-za-siget.throwBallWithMouse": {
                         "type": "boolean",
                         "default": false,
                         "description": "Throw ball with mouse"

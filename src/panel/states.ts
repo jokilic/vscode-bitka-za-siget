@@ -321,7 +321,7 @@ export class ChaseState implements IState {
 
         if (
             this.canvas.height - this.ballState.cy <
-                this.pet.width + this.pet.floor &&
+            this.pet.width + this.pet.floor &&
             this.ballState.cx < this.pet.left &&
             this.pet.left < this.ballState.cx + 15
         ) {
