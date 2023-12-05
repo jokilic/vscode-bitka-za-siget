@@ -1,8 +1,8 @@
 {
     "name": "vscode-bitka-za-siget",
     "displayName": "vscode-bitka-za-siget",
-    "description": "Bitka za Siget u vašem VSCode prozoru",
-    "version": "2.0.0",
+    "description": "Battle for Siget in your VSCode window",
+    "version": "1.0.0",
     "engines": {
         "vscode": "^1.73.0"
     },

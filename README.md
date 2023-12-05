@@ -25,3 +25,17 @@ After installing, open the command palette with `Ctrl+Shift+P` on Windows/Linux 
 Run the "Start battle for Siget" command (`vscode-bitka-za-siget.start`) to see Nikola Šubić Zrinjski in your VSCode window.
 
 ## Thank you
+
+### To-do
+
+- [ ] Create more heroes
+    - [ ] Juranić
+    - [ ] Alapić
+    - [ ] Paprutović
+    - [ ] Sokolović
+    - [ ] Levi
+    - [ ] Eva
+    - [ ] Jelena
+- [ ] Instead of ball, throw a fireball
+- [ ] Test extension
+- [ ] [Publish extension](https://code.visualstudio.com/api/working-with-extensions/publishing-extension)
